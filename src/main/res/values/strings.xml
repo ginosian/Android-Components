@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Components</string>
+
+    <!-- Activity labels -->
+    <string name="activity.label.numselector">Number Selector</string>
+    <string name="activity.label.listcomponent">List Component</string>
+
+    <!-- Buttons -->
+    <string name="button.name.apply">Apply</string>
+    <string name="button.name.cancel">Cancel</string>
+    <string name="button.name.plus">+</string>
+    <string name="button.name.minus">-</string>
+
+    <!-- Infos -->
+    <string name="info.message.pieces">Enter number of pieces:</string>
+
+    <!-- Menu items -->
+    <string name="menu.item.search">Search</string>
+
+    <!-- Stepper -->
+    <string name="button.name.back">Back</string>
+    <string name="button.name.next">Next</string>
+    <string name="button.name.done">Done</string>
+</resources>

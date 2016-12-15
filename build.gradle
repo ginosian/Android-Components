@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersionComponents
+    buildToolsVersion rootProject.ext.buildToolsVersionComponents
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkComponents
+        targetSdkVersion rootProject.ext.targetSdkComponents
+        versionCode rootProject.ext.versionCodeComponents
+        versionName rootProject.ext.versionNameComponents
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:' + rootProject.ext.supportLibVersion
+    compile 'com.android.support:design:' + rootProject.ext.supportLibVersion
+    compile 'com.google.android.gms:play-services-location:' + rootProject.ext.playServicesVersion
+    compile 'com.google.android.gms:play-services-analytics:' + rootProject.ext.playServicesVersion
+    compile 'com.google.code.gson:gson:' + rootProject.ext.gsonVersion
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:' + rootProject.ext.jUnitVersion
+}
